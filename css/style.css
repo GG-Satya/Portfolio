@@ -330,39 +330,17 @@ h3.my-profession
     text-align: center;
     position: relative;
 }
-.home-img::after
-{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-} 
-.home-img::before
-{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
-}
 .home .home-img img
 {
     margin: auto;
     border-radius: 100%;
-    box-shadow: 0 0 10px var(--skin-color);
+    box-shadow: 0 0 10px var(--text-black-700);
     height: 400px;
     transition: all 1s linear 0s;
 }
 .home .home-img img:hover
 {
-    transform: perspective(200px) translate3d(100px,100px,-600px);
+    transform: perspective(300px) translate3d(100px,100px,-600px);
 }
 /*About*/
 .about .about-content
