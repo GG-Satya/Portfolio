@@ -1,8 +1,5 @@
 # Hey there :wave:
 
-[![Visitors](https://visitor-badge.glitch.me/badge?page_id=GG-Satya.Portfolio)](https://gg-satya.github.io/Portfolio/)
-
-
 ## About me
 
 I'm Satyaprasanna Dash. A back-end developer . Development Community is :heart:. Code blooded animal, 1xEngineer :stuck_out_tongue: and :coffee: lover. 
