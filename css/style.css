@@ -335,7 +335,7 @@ h3.my-profession
     margin: auto;
     border-radius: 100%;
     box-shadow: 0 0 20px var(--skin-color);
-    height: 400px;
+    height: 360px;
     transition: all 1s linear 0s;
 }
 .home .home-img img:hover
