@@ -302,9 +302,9 @@ h3.hello
     margin: 15px 0;
 }
 h3.hello span{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 35px;
+    font-weight: 600;
     color: var(--skin-color);
 
 }
@@ -316,6 +316,12 @@ h3.my-profession
 .typing
 {
     color: var(--skin-color);
+}
+/* Base styles for the home-info */
+.home-info {
+    flex: 1;
+    max-width: 60%;
+    padding: 15px;
 }
 .home-info p
 {
@@ -335,13 +341,236 @@ h3.my-profession
     margin: auto;
     border-radius: 100%;
     box-shadow: 0 0 20px var(--skin-color);
-    height: 360px;
+    height: 340px;
     transition: all 1s linear 0s;
 }
 .home .home-img img:hover
 {
     transform: perspective(300px) translate3d(100px,100px,-600px);
 }
+
+/*Experience*/
+.experience .experience-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content .experience-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content .experience-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.experience .experience-content .experience-text h3 span
+{
+    color: var(--skin-color);
+}
+.experience .experience-content .experience-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.experience .experience-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.experience .experience-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.experience .experience-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.experience .experience-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.experience .experience-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+.experience .experience-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.experience .experience-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+.experience .experience-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+.experience .experience-content .skills .skill-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.experience .experience-content .skills .skill-item .progress
+{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.experience .experience-content .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    border-radius:4px;
+    background-color: var(--skin-color);
+}
+.experience .experience-content .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.experience .experience-content .education ,
+.experience .experience-content .experience
+{
+    flex: 0 0 100%;
+    /* max-width: 100%; */
+    padding: 50px;
+}
+.experience .experience-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.experience .experience-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.experience .experience-content .timeline
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.experience .experience-content .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.experience .experience-content .timeline .timeline-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.experience .experience-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.experience .experience-content .timeline .timeline-item::before
+{
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 15px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.experience .experience-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.experience .experience-content .timeline-item .circle-dot img.company-logo {
+    width: 80%; /* Adjust size as needed */
+    height: 80%; /* Adjust size as needed */
+    border-radius: 50%;
+}
+.experience .experience-content .timeline .timeline-date
+{
+    font-weight: 600;
+    font-size: 14px;
+    /* margin-bottom: 8px; */
+    color: var(--text-black-700);
+}
+.experience .experience-content .timeline .timeline-date .fa
+{
+    margin-right: 5px;
+}
+.experience .experience-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    /* margin-bottom: 8px; */
+    text-transform: capitalize;
+    color: var(--skin-color);
+}
+.experience .experience-content .timeline .timeline-sub-content
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    color: var(--text-black-700);
+}
+.experience .experience-content .timeline .timeline-sub-content .location-logo
+{
+    padding-right: 5px;
+}
+.experience .experience-content .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
 /*About*/
 .about .about-content
 {
@@ -396,6 +625,17 @@ h3.my-profession
     margin-left: 4px;
     display: inline-block;
 }
+.about .about-content .personal-info .info-item p .fa-solid{
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: var(--skin-color);
+}
+.about .about-content .personal-info .info-item p a
+{
+    text-decoration: underline;
+    color: var(--skin-color);
+}
 .about .about-content .personal-info .buttons
 {
     margin-top: 30px;
@@ -404,6 +644,9 @@ h3.my-profession
 {
     margin-right: 15px;
     margin-top: 10px;
+}
+.about .about-content .personal-info .buttons .btn .icon {
+    padding-right: 10px;
 }
 .about .about-content .skills
 {
@@ -483,7 +726,7 @@ h3.my-profession
 {
     position: relative;
     padding-left: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 .about .about-content .timeline .timeline-item:last-child
 {
@@ -534,6 +777,20 @@ h3.my-profession
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-text span
+{
+    color: var(--skin-color);
+    font-weight: bold;
+}
+.about .about-content .timeline .timeline-text .skill-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.about .about-content .timeline .timeline-text .skill-list li{
+    flex: 1 0 45%; /* Adjust the width as needed */
 }
 /* Service */
 .service .container
@@ -615,9 +872,13 @@ h3.my-profession
 }
 .portfolio .portfolio-item
 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    /* flex: 0 0 33.33%;
+    max-width: 33.33%; */
     margin-bottom: 30px;
+    flex: 1 1 calc(33.333% - 30px); /* Adjust to fit three items per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .portfolio .portfolio-item-inner
 {
@@ -625,11 +886,23 @@ h3.my-profession
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 .portfolio .portfolio-item-inner .portfolio-img img
 {
     width: 100%;
     display: block;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.portfolio .portfolio-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the item on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow effect on hover */
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
 }
 /* CONTACT */
 .contact-title
@@ -749,14 +1022,12 @@ h3.my-profession
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home .home-info
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .home .home-img{
+        display: flex;
+        align-items: center;
     }
-    .home .home-img
-    {
-        display: none;
+    .home .home-img img {
+        height: 250px;
     }
 }
 @media (max-width:767px)
@@ -772,5 +1043,39 @@ h3.my-profession
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .experience .experience-content .education
+    {
+        padding: 5px;
+    }
+    .experience .experience-content .timeline{
+        padding-right: 20px;
+    }
+    .experience .experience-content .timeline .timeline-date{
+        font-size: 12px;
+    }
+    .experience .experience-content .timeline .timeline-sub-content{
+        font-size: 14px;
+    }
+    .home .home-img img {
+        height: 150px;
+    }
+}
+@media (max-width: 500px) {
+    .experience .experience-content .education
+    {
+        padding: 0px;
+    }
+    .experience .experience-content .timeline{
+        padding-right: 15px;
+    }
+    .experience .experience-content .timeline .timeline-date{
+        font-size: 9px;
+    }
+    .experience .experience-content .timeline .timeline-sub-content{
+        font-size: 12px;
+    }
+    .home .home-img img {
+        height: 95px;
     }
 }
